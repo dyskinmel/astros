@@ -1,11 +1,16 @@
 ---
 import { changeLanguage } from "i18next";
+import Hero from "@components/hero.astro";
 import Container from "@components/container.astro";
+import Benefit_title from "@components/benefit_title.astro";
+import Benefit_odd from "@components/benefit_odd.astro";
+import Benefit_even from "@components/benefit_even.astro";
+import Call_for_action from "@components/call_for_action.astro";
 import Features from "@components/features.astro";
 import Faq from "@components/faq.astro";
-import Hero from "@components/hero.astro";
 import Newsletter from "@components/newsletter.astro";
 import Layout from "@layouts/Layout.astro";
+
 
 changeLanguage("en");
 ---
@@ -13,8 +18,13 @@ changeLanguage("en");
 <Layout>
 	<Container>
 		<Hero />
-		<Features />
-		<Faq />
+		<Benefit_title />
+		<Benefit_odd benefitType="benefit1"/>
+		<Benefit_even benefitType="benefit2"/>
+		<Benefit_odd benefitType="benefit3"/>
+		<Call_for_action />
+		<!-- <Features /> -->
+		<!-- <Faq /> -->
 		<Newsletter />
 	</Container>
 </Layout>

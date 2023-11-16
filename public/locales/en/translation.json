@@ -1,9 +1,10 @@
 {
 	"hero": {
-		"title": "Supercharged web development!",
-		"subtitle": "Unleashing the Power of the Web: Combines Astro, Tailwind CSS and Alpine.js to Streamline Your Web Development Process.",
+		"main_title": "Build, Adapt, and Thrive.",
+		"title": "The Platform for Web Innovation Without Limits",
+		"subtitle": "Give you whole new web design experience by offering seamless integration with your favorite headless CMS and APIs, granting you limitless flexibility to build exactly what you envision.",
 		"globe_title": "Craft Stunning, High-Performance Websites with Ease and Speed",
-		"main_button_text": "Download on github",
+		"main_button_text": "Join Alpha",
 		"secondary_button_text": "Go to animated version"
 	},
 	"hero_animated": {
@@ -16,6 +17,42 @@
 		"contact": "Contacts",
 		"primary_button_text": "Download",
 		"secondary_button_text": "Login"
+	},
+	"benefits" :{
+		"title" : "What we are building",
+		"subtitle" : "What we are building",
+		"description" : "aaa"
+	},
+	"benefit1" : {
+		"title" : "Unleash Creativity with limitless integrations",
+		"item1_title" : "Infinite Design Capabilities",
+		"item1_text" : "Unleash your creativity without boundaries, and bring to life designs that you've never even imagined.",
+		"item2_title" : "Effortless Integrations",
+		"item2_text" : "Harness the power of seamless integration with headless CMS and an array of APIs through our platform, streamlining application development and propelling your business forward at an unprecedented pace.",
+		"item3_title" : "Future-Proof Architecture",
+		"item3_text" : "Build with an API-based system that offers flexibility without compromise, ensuring you keep pace with the ever-evolving technology landscape."
+	},
+	"benefit2" : {
+		"title" : "Simply intuitive, Purely innovative, No code.",
+		"item1_title" : "Intuitive User Interface",
+		"item1_text" : "Our drag-and-drop editor brings your design to life without a single line of code, making it effortless to navigate and create. For those who desire full control, dive into the code and push the boundaries of customization.",
+		"item2_title" : "Easy Learning Curve",
+		"item2_text" : "Jump straight into designing with our intuitive platform. No extensive tutorials or technical background needed — start crafting immediately with ease.",
+		"item3_title" : "Instant Prototyping",
+		"item3_text" : "See your ideas come to life in real-time. With our visual interface, you can prototype swiftly, making the design process fluid and natural."
+	},
+	"benefit3" : {
+		"title" : "Edge ahead: Blazing Speed, Unlimited Expansion",
+		"item1_title" : "Revolutionary Speed",
+		"item1_text" : "Harness the latest advancements in technology to launch websites that load at record speeds, enhancing user engagement and reducing bounce rates.",
+		"item2_title" : "Effortless Efficiency",
+		"item2_text" : "Experience a seamless workflow with our platform's optimized performance that guarantees quick updates and maintenance, saving you time and resources.",
+		"item3_title" : "Scalable Architecture",
+		"item3_text" : "Our solution's versatile architecture not only grows with your site but also spans across platforms—be it mobile, web, or IoT—ensuring a cohesive experience wherever your users are."
+	},
+	"call_for_action" : {
+		"title" : "Shape the Future with Us",
+		"description" : "Intrigued by our ongoing development? Join our alpha program and take an active role in advancing our innovative system."
 	},
 	"features": {
 		"learn_more": "Learn more",
@@ -40,7 +77,7 @@
 		"subtitle": "Get notified for all updates",
 		"input_placeholder": "Enter your email",
 		"button_text": "Subscribe",
-		"privacy": "We care about the protection of your data. Read our",
+		"privacy": "We care about the protection of your data. Read our ",
 		"privacy_link": "Privacy Policy."
 	},
 	"blog": {
