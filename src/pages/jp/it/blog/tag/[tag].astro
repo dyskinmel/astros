@@ -7,7 +7,7 @@ import Posts from "@components/blog/posts.astro";
 import Sectionhead from "@components/sectionhead.astro";
 import Pagination from "@components/blog/pagination.astro";
 
-changeLanguage("en");
+changeLanguage("jp");
 
 export async function getStaticPaths() {
     const posts = await getCollection("blog", ({ data }) => {
@@ -17,29 +17,29 @@ export async function getStaticPaths() {
         const [lang, ...slug] = page.slug.split("/");
         return lang === i18next.language;
     });
-    const categories = new Set();
+    const tags = new Set();
     localizedPosts.map((post) => {
-        typeof post.data.category === "string" && categories.add(post.data.category.toLowerCase());
+        Array.isArray(post.data.tags) && post.data.tags.map((tag) => tags.add(tag.toLowerCase()));
     });
-    return Array.from(categories).map((category) => {
+    return Array.from(tags).map((tag) => {
         return {
-            params: { category: category },
+            params: { tag: tag },
             props: {
-                posts: localizedPosts.filter((post) => typeof post.data.category === "string"),
-                category: category,
+                posts: localizedPosts.filter((post) => Array.isArray(post.data.tags) && post.data.tags.find((elem) => elem.toLowerCase() === tag)),
+                tag: tag,
                 lang: i18next.language,
             },
         };
     });
 }
 // Get the post directly from the prop on render
-const { posts, category, lang } = Astro.props;
+const { posts, tag, lang } = Astro.props;
 ---
 
 <Layout title="Blog">
 	<Container>
 		<Sectionhead>
-			<Fragment slot="title">#{category}</Fragment>
+			<Fragment slot="title">#{tag}</Fragment>
 			<Fragment slot="desc">We write about building startups and thoughts going on our mind.</Fragment>
 		</Sectionhead>
 		<Posts posts={posts} />
